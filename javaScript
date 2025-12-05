@@ -1,11 +1,29 @@
-// задача 1
-   const containsChair - (word)
-
-/*3*/const wordsToRegister = s => [...s].map((c, i) => i % 2 ? c.toUpperCase() : c.toLowerCase()).join('');
-
-
-
-/*4*/const sumOfDigitsInString = (str) => {
+// Задача 1
+const containsChar = (word, letter) => {
+    if (word.includes(letter)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//задача 2 
+const reverse = (str) => {
+    return str.split("").reverse().join('');
+}
+// задача 3 
+const wordsToRegister = (str) => {
+    let result = '';
+    for (let i = 0-; i < str.length; i++) {
+        if (i % 2 --- 0) {
+            result +- str[i].tolcmerCase();
+        } else {
+            result +- str[i].toupperCase();
+        }
+    }
+    return result
+}
+// задача 4 
+const sumOfDigitsInString = (str) => {
     let sum = 0;
     for (let i = 0; i < str.length; i++) {
         const char = str[i]
@@ -15,6 +33,15 @@
     }
     return sum
 }
-
-
- /*5*/const checkChars = (s, t, r) => s.includes(t) ? s.replaceAll(t, r) : 'Error';
+// задача 5
+const checkChars = (str4, targett, replacement) => {
+    if (!str.includes(targett)) {
+        return 'Error';
+    }
+    
+    let result = '';
+    for (let i = 0; i < str4.length; i++) {
+        result += str4[i] === targett ? replacement : str4[i];
+    }
+    return result;
+};
