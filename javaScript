@@ -1,0 +1,20 @@
+// задача 1
+   const containsChair - (word)
+
+/*3*/const wordsToRegister = s => [...s].map((c, i) => i % 2 ? c.toUpperCase() : c.toLowerCase()).join('');
+
+
+
+/*4*/const sumOfDigitsInString = (str) => {
+    let sum = 0;
+    for (let i = 0; i < str.length; i++) {
+        const char = str[i]
+        if (char >= '0' && char <= '9') {
+            sum += parseInt(char, 10)
+        }
+    }
+    return sum
+}
+
+
+ /*5*/const checkChars = (s, t, r) => s.includes(t) ? s.replaceAll(t, r) : 'Error';
